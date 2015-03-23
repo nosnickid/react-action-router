@@ -1,0 +1,61 @@
+{
+  "name": "react-action-router",
+  "version": "0.0.1",
+  "description": "A small url router for Flux apps, based on Actions",
+  "scripts": {
+    "build": "browserify -e index.js -t browserify-shim -s ReactActionRouter -u react -o dist/react-action-router.js",
+    "watchbuild": "watchify -e index.js -t browserify-shim -s ReactActionRouter -o dist/react-action-router.js",
+    "dist": "uglifyjs dist/react-action-router.js > dist/react-action-router.min.js",
+    "test": "npm run test-client && npm run test-server",
+    "test-client": "karma start --single-run",
+    "test-server": "mocha test/server/**/*.test.js"
+  },
+  "author": "Steven Dickinson <github@orangestems.co.uk>",
+  "homepage": "https://github.com/nosnickid/react-action-router",
+  "keywords": [
+    "react",
+    "router"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nosnickid/react-action-router"
+  },
+  "bugs": {
+    "url": "https://github.com/nosnickid/react-action-router/issues"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=0.12.0"
+  },
+  "browserify": {
+    "transform": [ "browserify-shim" ]
+  },
+  "browserify-shim": {
+  },
+  "browser": {
+    "react": "./node_modules/react/dist/react.js"
+  },
+  "dependencies": {
+    "path-to-regexp": "^1.0.1",
+    "urllite": "^0.5.0"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^8.1.0",
+    "browserify-shim": "^3.8.2",
+    "chai": "^2.1.2",
+    "cheerio": "^0.18.0",
+    "karma": "^0.12.21",
+    "karma-browserify": "^2.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-cli": "0.0.4",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-sauce-launcher": "^0.2.10",
+    "mocha": "^2.1.0",
+    "react": "^0.12.0",
+    "uglify-js": "^2.4.15",
+    "watchify": "^2.4.0"
+  }
+}

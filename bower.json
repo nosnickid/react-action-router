@@ -1,0 +1,30 @@
+{
+  "name": "react-action-router",
+  "main": "dist/react-action-router.js",
+  "version": "1.1.1",
+  "homepage": "https://github.com/nosnickid/react-action-router",
+  "authors": [
+    "Steven Dickinson <github@orangestems.co.uk>"
+  ],
+  "description": "An action based router for React.js",
+  "dependencies": {
+    "path-to-regexp": "pillarjs/path-to-regexp#1.0.1",
+    "urllite": "hzdg/urllite.js#0.5.0"
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "router"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "example",
+    "node_modules",
+    "test",
+    "karma.conf.js"
+  ]
+}
