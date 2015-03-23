@@ -8,7 +8,7 @@
     "dist": "uglifyjs dist/react-action-router.js > dist/react-action-router.min.js",
     "test": "npm run test-client && npm run test-server",
     "test-client": "karma start --single-run",
-    "test-server": "mocha test/server/**/*.test.js"
+    "test-server": "mocha test/**/*.test.js"
   },
   "author": "Steven Dickinson <github@orangestems.co.uk>",
   "homepage": "https://github.com/nosnickid/react-action-router",

@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/nosnickid/react-action-router.svg?branch=master)](https://travis-ci.org/nosnickid/react-action-router)
 
 An action based URL router for [React.js](http://facebook.github.io/react/) with
-[Flux]((https://github.com/facebook/flux)
+[Flux](https://github.com/facebook/flux)
 
 ## Principle
 
