@@ -38,6 +38,8 @@ module.exports = {
         return State;
     },
 
+    NavigateTo: Browser.NavigateTo,
+
     ActionLink: ActionLink
 
 };
