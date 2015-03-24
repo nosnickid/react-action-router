@@ -1,6 +1,7 @@
 'use strict';
 
-var Routes, State;
+var Url = require('./Url'),
+    Routes, State;
 
 State = null;
 
@@ -21,5 +22,14 @@ module.exports = {
         window.addEventListener('hashchange', handleHashChange.bind(null, handler));
         if (autoStart || autoStart === undefined) handleHashChange(handler);
     },
+    NavigateTo: function(routeName, params) {
+        var url = Url.Generate(routeName, params);
+        if (url) {
+            window.location.hash = url;
+        } else {
+            throw new Error("Can't find route" + routeName);
+        }
+    },
+
     State: State
 };
