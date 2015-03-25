@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "A small url router for Flux apps, based on Actions",
   "scripts": {
-    "build": "browserify -e index.js -t browserify-shim -s ReactActionRouter -u react -o dist/react-action-router.js",
-    "watchbuild": "watchify -e index.js -t browserify-shim -s ReactActionRouter -o dist/react-action-router.js",
+    "build": "webpack module/ActionRouter.js dist/react-action-router.js",
+    "watchbuild": "webpack --watch module/ActionRouter.js dist/react-action-router.js",
     "dist": "uglifyjs dist/react-action-router.js > dist/react-action-router.min.js",
     "test": "npm run test-client && npm run test-server",
     "test-client": "karma start --single-run",
@@ -27,11 +27,6 @@
   "peerDependencies": {
     "react": ">=0.12.0"
   },
-  "browserify": {
-    "transform": [ "browserify-shim" ]
-  },
-  "browserify-shim": {
-  },
   "browser": {
     "react": "./node_modules/react/dist/react.js"
   },
@@ -41,8 +36,6 @@
   },
   "devDependencies": {
     "babelify": "^5.0.4",
-    "browserify": "^8.1.0",
-    "browserify-shim": "^3.8.2",
     "chai": "^2.1.2",
     "cheerio": "^0.18.0",
     "karma": "^0.12.21",
@@ -56,6 +49,7 @@
     "mocha": "^2.1.0",
     "react": "^0.12.0",
     "uglify-js": "^2.4.15",
-    "watchify": "^2.4.0"
+    "watchify": "^2.4.0",
+    "webpack": "^1.7.3"
   }
 }

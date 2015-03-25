@@ -1,7 +1,7 @@
 {
   "name": "react-action-router",
   "main": "dist/react-action-router.js",
-  "version": "1.1.1",
+  "version": "0.3",
   "homepage": "https://github.com/nosnickid/react-action-router",
   "authors": [
     "Steven Dickinson <github@orangestems.co.uk>"
