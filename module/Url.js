@@ -29,7 +29,7 @@ function generateUrl(Route, params) {
         var nodePath = node.relativePath;
         if (node.params) {
             node.params.forEach(function(param) {
-                nodePath = nodePath.replace(":" + param.name, params.values[param.name]);
+                nodePath = nodePath.replace(":" + param.name, params[param.name]);
             });
         }
         path.unshift(nodePath);

@@ -36,10 +36,8 @@ describe('RouteData', function() {
             ])
         );
         params = {
-            values: {
-                someValue: 99,
-                deeperValue: 100
-            }
+            someValue: 99,
+            deeperValue: 100
         };
 
         Url.Register(routes);
