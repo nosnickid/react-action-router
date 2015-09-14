@@ -24,14 +24,9 @@
     "url": "https://github.com/nosnickid/react-action-router/issues"
   },
   "license": "MIT",
-  "peerDependencies": {
-    "react": ">=0.12.0"
-  },
-  "browser": {
-    "react": "./node_modules/react/dist/react.js"
-  },
   "dependencies": {
     "path-to-regexp": "^1.0.1",
+    "react": "^0.13.3",
     "urllite": "^0.5.0"
   },
   "devDependencies": {
