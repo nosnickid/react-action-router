@@ -1,6 +1,6 @@
 {
   "name": "react-action-router",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small url router for Flux apps, based on Actions",
   "scripts": {
     "build": "webpack module/ActionRouter.js dist/react-action-router.js",
@@ -24,9 +24,11 @@
     "url": "https://github.com/nosnickid/react-action-router/issues"
   },
   "license": "MIT",
+  "peerDependencies": {
+    "react": ">=0.13.*"
+  },
   "dependencies": {
     "path-to-regexp": "^1.0.1",
-    "react": "^0.13.3",
     "urllite": "^0.5.0"
   },
   "devDependencies": {
@@ -42,7 +44,7 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-sauce-launcher": "^0.2.10",
     "mocha": "^2.1.0",
-    "react": "^0.12.0",
+    "react": "^0.14.0",
     "uglify-js": "^2.4.15",
     "watchify": "^2.4.0",
     "webpack": "^1.7.3"
