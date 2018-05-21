@@ -1,6 +1,6 @@
 {
   "name": "react-action-router",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A small url router for Flux apps, based on Actions",
   "scripts": {
     "build": "webpack module/ActionRouter.js dist/react-action-router.js",
