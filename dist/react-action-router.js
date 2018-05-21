@@ -841,7 +841,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	function ActionLink(props) {
 	    return React.createElement('a', {
 	        href: Generate(props.routeName, props.params)
-	    }, this.props.children);
+	    }, props.children);
 	}
 
 	module.exports = ActionLink;
