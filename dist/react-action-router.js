@@ -838,13 +838,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	var React = __webpack_require__(10),
 	    Generate = __webpack_require__(8).Generate;
 
-	var ActionLink = React.createClass({
-	    render: function() {
-	        return React.createElement('a', {
-	            href: Generate(this.props.routeName, this.props.params)
-	        }, this.props.children);
-	    }
-	});
+	function ActionLink(props) {
+	    return React.createElement('a', {
+	        href: Generate(this.props.routeName, this.props.params)
+	    }, this.props.children);
+	}
 
 	module.exports = ActionLink;
 
