@@ -5,7 +5,7 @@ var React = require('react'),
 
 function ActionLink(props) {
     return React.createElement('a', {
-        href: Generate(this.props.routeName, this.props.params)
+        href: Generate(props.routeName, props.params)
     }, this.props.children);
 }
 
